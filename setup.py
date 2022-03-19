@@ -2,23 +2,22 @@ import os
 from setuptools import find_packages
 from setuptools import setup
 
-# with open(os.path.join("cloudbees", "VERSION")) as file:
-#     version = file.read().strip()
-version = '0.0.1'
+with open(os.path.join("cloudbees", "VERSION")) as file:
+    version = file.read().strip()
 
 with open("README.rst") as file:
     long_description = file.read()
 
 setup(
-    name="cloudbees-cd-ro",
+    name="cloudbees-python-api",
     description="Python Cloudbees CD/RO REST API Wrapper",
     long_description=long_description,
     license="Apache License 2.0",
     version=version,
-    download_url="https://github.com/zhan9san/cloudbees-cd-ro",
+    download_url="https://github.com/zhan9san/cloudbees-python-api",
     author="Jack Zhang",
     author_email="jack4zhang@gmail.com",
-    url="https://github.com/zhan9san/zhan9san/cloudbees-cd-ro",
+    url="https://github.com/zhan9san/cloudbees-python-api",
     keywords="cloudbees cd/ro rest api",
     packages=find_packages(include=["cloudbees*"]),
     package_dir={"cloudbees": "cloudbees"},
